@@ -1,0 +1,53 @@
+/* reset */
+body {
+    font-size: 14px;
+    font-family: sans-serif,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+
+/* index */
+.wjs_topBar {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.wjs_topBar >.container {}
+.wjs_topBar >.container >.row{
+}
+.wjs_topBar >.container >.row>div{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.wjs_topBar >.container >.row>div a{
+    font-size: 12px;
+    color: #333;
+}
+.wjs_topBar >.container >.row>div a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.wjs_topBar >.container >.row>div:last-child {
+    border-right: none;
+
+}
+.wjs_app {
+    display: block;
+    position: relative;
+}
+.wjs_app img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -60px;
+}
+.wjs_app:hover img{
+    display: block;
+}
