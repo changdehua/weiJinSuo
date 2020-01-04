@@ -10,6 +10,7 @@
     <script src="./lib/respond/respond.min.js"></script>
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/artTemplate/template-native.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
 </head>
@@ -80,30 +81,10 @@
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
             </ol>
           
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active">
-                <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_01_2000x410.jpg);"></a>
-                <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="./images/slide_01_640x340.jpg" alt=""></a>
-              </div>
-              <div class="item">
-                <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_02_2000x410.jpg);"></a>
-                <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="./images/slide_01_640x340.jpg" alt=""></a>
-              </div>
-              <div class="item">
-                <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_03_2000x410.jpg);"></a>
-                <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="./images/slide_01_640x340.jpg" alt=""></a>
-              </div>
-              <div class="item">
-                <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_04_2000x410.jpg);"></a>
-                <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="./images/slide_01_640x340.jpg" alt=""></a>
-              </div>
     
             </div>
           
@@ -114,6 +95,7 @@
             <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
               <span class="glyphicon glyphicon-chevron-right"></span>
             </a>
+
           </div>
     
     </section>
@@ -127,6 +109,32 @@
     <section class="wjs_news"></section>
     <!-- 合作伙伴 -->
     <footer class="wjs_partner"></footer>
+
+    <script type="text/template" id="pointTemplate">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+    </script>
+    <script type="text/template" id="imageTemplate">
+        <div class="item active">
+            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_01_2000x410.jpg);"></a>
+            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/slide_01_640x340.jpg" alt=""></a>
+          </div>
+          <div class="item">
+            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_02_2000x410.jpg);"></a>
+            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/slide_02_640x340.jpg" alt=""></a>
+          </div>
+          <div class="item">
+            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_03_2000x410.jpg);"></a>
+            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/slide_03_640x340.jpg" alt=""></a>
+          </div>
+          <div class="item">
+            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_04_2000x410.jpg);"></a>
+            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/slide_04_640x340.jpg" alt=""></a>
+          </div>
+    </script>
 
 </body>
 </html>
