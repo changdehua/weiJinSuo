@@ -9,16 +9,18 @@ var banner=function(){
         url:"js/data.json",
         dataType:"json",
         success:function(data){
-            console.log(data);
+            // console.log(data);
 
-            var isMobile=$(window).width()>768;
-            console.log(isMobile);
+            var isMobile=$(window).width()<768;
+            // console.log(isMobile);
 
             // 模板引擎传递参数
-            var pointTemplate=template('pointTemplate',{data:data});
-            var imageTemplate=template('imageTemplate',{data:data,isM:isMobile});
-            $('.carousel-indicators').html(pointTemplate);
-            $('.carousel-inner').html(imageTemplate);
+            var pointHtml=template('pointTemplate',{list:data});
+            console.log(pointHtml);
+            var imageHtml=template('imageTemplate',{list:data,isM:isMobile});
+            console.log(imageHtml);
+            $('.carousel-indicators').html(pointHtml);
+            $('.carousel-inner').html(imageHtml);
 
             
         }

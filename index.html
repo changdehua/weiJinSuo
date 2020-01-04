@@ -111,29 +111,25 @@
     <footer class="wjs_partner"></footer>
 
     <script type="text/template" id="pointTemplate">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+        <% for(var i=0;i < list.length;i++){ %>
+            <li data-target="#carousel-example-generic" data-slide-to="<%=i%>" class="<%=i==0?'active':''%>"></li>
+        <%} %>
 
     </script>
     <script type="text/template" id="imageTemplate">
-        <div class="item active">
-            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_01_2000x410.jpg);"></a>
-            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/slide_01_640x340.jpg" alt=""></a>
-          </div>
-          <div class="item">
-            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_02_2000x410.jpg);"></a>
-            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/slide_02_640x340.jpg" alt=""></a>
-          </div>
-          <div class="item">
-            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_03_2000x410.jpg);"></a>
-            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/slide_03_640x340.jpg" alt=""></a>
-          </div>
-          <div class="item">
-            <a href="#" class="pc_imgBox hidden-xs" style="background-image: url(images/slide_04_2000x410.jpg);"></a>
-            <a href="#" class="m_imgBox hidden-lg hidden-md hidden-sm"><img src="images/slide_04_640x340.jpg" alt=""></a>
-          </div>
+
+        <% for(var i=0;i < list.length;i++){%>
+            <div class="item <%=i==0?'active':''%>">
+                <%if(isM){%>
+                    <a href="#" class="m_imgBox"><img src="<%=list[i].mUrl%>" alt=""></a>
+                <%}else{%>
+                    <a href="#" class="pc_imgBox" style="background-image: url(<%=list[i].pcUrl%>);"></a>
+
+                <%}%>
+              </div>
+    
+        <%}%>
     </script>
 
 </body>
