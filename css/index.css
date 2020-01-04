@@ -148,6 +148,7 @@ a {
   }
   .wjs_nav .navbar-toggle {
     border-color: #ddd;
+    margin-top: 23px;
   }
   .wjs_nav .navbar-toggle:hover,
   .wjs_nav .navbar-toggle:focus {
