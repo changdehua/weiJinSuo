@@ -94,6 +94,7 @@ a {
     background-color: #fff;
     border: none;
     margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
   }
   .wjs_nav .wjs_icon_logo {
     color: #e92322;
@@ -208,3 +209,25 @@ a {
   fieldset[disabled] .wjs_nav .btn-link:focus {
     color: #ccc;
   }
+
+  /* 轮播图样式 */
+  .wjs_banner {
+      width: 100%;
+  }
+  .wjs_banner .pc_imgBox {
+    display: block;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wjs_banner .m_imgBox {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+}
+.wjs_banner .m_imgBox img {
+  width: 100%;
+  display: block;
+}
