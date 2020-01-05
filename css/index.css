@@ -386,3 +386,15 @@ a {
     border-bottom-color: #fff;
   }
 }
+
+/* 产品内容 */
+.wjs_product .product_box {
+  display: block;
+  height: 200px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #d8d8d8;
+  margin-top: 20px;
+}
+.wjs_product .product_box.active {
+  background-color: #e92322;
+}
