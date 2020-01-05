@@ -395,8 +395,16 @@ a {
   box-shadow: 2px 2px 5px #d8d8d8;
   margin-top: 20px;
 }
+.wjs_product .product_box:hover {
+  text-decoration: none;
+  color: #666;
+}
+.wjs_product .product_box {
+  color: #666;
+}
 .wjs_product .product_box.active {
   background-color: #e92322;
+  color: #fff;
 }
 /* 产品内容中每个盒子 */
 .wjs_product .product_box .product_right {
@@ -409,6 +417,7 @@ a {
 .wjs_product .product_box.active .product_right {
   color: #fff;
 }
+
 .wjs_product .product_box .product_right p:first-child {
   margin-top: 25px;
   margin-bottom: 10px;
@@ -423,4 +432,13 @@ a {
 }
 .wjs_product .product_box .product_left {
   overflow: hidden;
+}
+
+/*产品内容中每个盒子左侧*/
+.product_left h3 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.product_left div {
+  font-size: 12px;
 }
