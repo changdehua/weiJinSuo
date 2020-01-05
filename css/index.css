@@ -31,7 +31,16 @@ a {
     content: "\e920";
 }
 .wjs_icon_name::after {
-    content: "\e93e";
+  content: "\e93e";
+}
+.wjs_icon_dollar::after {
+  content: "\e903";
+}
+.wjs_icon_clock::after {
+  content: "\e906";
+}
+.wjs_icon_video::after {
+  content: "\e905";
 }
 
 
@@ -230,4 +239,66 @@ a {
 .wjs_banner .m_imgBox img {
   width: 100%;
   display: block;
+}
+
+
+/* 信息模块 */
+.wjs_info {
+  width: 100%;  
+}
+.wjs_info >.container {
+  width: 900px;
+}
+/* 小屏下container宽度变为750px */
+@media screen and (min-width:768px) and (max-width:992px) {
+  .wjs_info >.container {
+    width: 750px;
+  }
+  
+}
+.wjs_info >.container>div {
+  margin: 20px 0;
+}
+.wjs_info >.container>div>a {
+  display: block;
+  text-decoration: none;
+}
+.wjs_info >.container>div>a:hover {
+  color: #e92322;
+}
+.wjs_info >.container>div>a .wjs_icon_dollar {
+  font-size: 30px;
+}
+
+
+/* 预约模块 */
+.wjs_book {
+  width: 100%;
+  padding: 40px 0;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.wjs_book>.container {
+  width: 900px;
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+  .wjs_book>.container {
+    width: 750px;
+  }
+}
+@media screen and (max-width:768px) {
+  .wjs_book>.container {
+    width: 100%;
+  }
+}
+.wjs_book .book {
+  color: #e92322;
+  border-bottom: 1px dashed #e92322;
+}
+.wjs_book .video:hover {
+  color: #e92322;
+ text-decoration: none;
+}
+.wjs_icon_clock,.wjs_icon_video {
+  font-size: 20px;
 }
