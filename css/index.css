@@ -390,11 +390,37 @@ a {
 /* 产品内容 */
 .wjs_product .product_box {
   display: block;
-  height: 200px;
+  height: 150px;
   background-color: #fff;
   box-shadow: 2px 2px 5px #d8d8d8;
   margin-top: 20px;
 }
 .wjs_product .product_box.active {
   background-color: #e92322;
+}
+/* 产品内容中每个盒子 */
+.wjs_product .product_box .product_right {
+  float: right;
+  height: 150px;
+  width: 80px;
+  text-align: center;
+  color: #e92322;
+}
+.wjs_product .product_box.active .product_right {
+  color: #fff;
+}
+.wjs_product .product_box .product_right p:first-child {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.wjs_product .product_box .product_right p:first-child b{
+  font-size: 46px;  
+
+}
+.wjs_product .product_box .product_right p:first-child sub{
+  bottom: 0;
+  font-size: 12px;
+}
+.wjs_product .product_box .product_left {
+  overflow: hidden;
 }
