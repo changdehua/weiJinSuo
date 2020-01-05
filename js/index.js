@@ -38,7 +38,7 @@ var banner=function(){
     var getData=function(callback){
         if(window.data){
             //有数据直接渲染,避免多次发送请求
-            callback&&callback(data);
+            callback&&callback(window.data);
 
         }else{
             // 无数据,请求数据
@@ -51,7 +51,7 @@ var banner=function(){
                     // console.log(data);
                     // 存储数据
                     window.data=data;
-                    callback&&callback(data);
+                    callback&&callback(window.data);
                 }
             });
     
