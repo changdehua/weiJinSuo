@@ -302,3 +302,10 @@ a {
 .wjs_icon_clock,.wjs_icon_video {
   font-size: 20px;
 }
+
+/* 产品模块 */
+.wjs_product {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
