@@ -76,9 +76,38 @@ var banner=function(){
         })
     };
 
- //3.页面尺寸改变就熏染页面
+    //3.页面尺寸改变就熏染页面
     $(window).on('resize',function(){
         render();
     }).trigger('resize');
+
+
+
+    //4.根据手势滑动轮播图
+    var startX=0;
+    var distanceX=0;
+    var isMove=false;
+    $('.wjs_banner').on('touchstart',function(e){
+        // console.log(e);
+        startX=e.originalEvent.touches[0].clientX;
+    }).on('touchmove',function(e){
+        isMove=true;
+        var endX=e.originalEvent.touches[0].clientX;
+        distanceX=endX-startX;
+    }).on('touchend',function(e){
+        if(isMove&&Math.abs(distanceX)>50){
+            if(distanceX>0){
+                console.log('prev');
+                $('.carousel').carousel('prev');
+            }else{
+                console.log('next');
+                $('.carousel').carousel('next');
+
+            }
+        }
+        startX=0;
+        distanceX=0;
+        isMove=false;
+    });
 
 }
