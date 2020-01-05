@@ -310,7 +310,10 @@ a {
   margin-bottom: 20px;
   background-color: #f5f5f5;
 }
-
+.wjs_product .nav-tabs-parent {
+  width: 100%;
+  overflow: hidden;
+}
 /* 复写nav_tabs样式 */
 .wjs_product .nav-tabs {
   border-bottom: 1px solid #ddd;

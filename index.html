@@ -11,8 +11,8 @@
     <script src="./lib/jquery/jquery.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./lib/artTemplate/template-native.js"></script>
+    <script src="./lib/iscroll/iscroll.js"></script>
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js"></script>
 </head>
 <body>
     <!-- 顶部-->
@@ -189,15 +189,18 @@
         <div class="container">
             <div>
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#product_nav01" data-toggle="tab">特别推荐</a></li>
-                  <li><a href="#product_nav02" data-toggle="tab">微平台</a></li>
-                  <li><a href="#product_nav03" data-toggle="tab">微平台</a></li>
-                  <li><a href="#product_nav04" data-toggle="tab">微平台</a></li>
-                  <li><a href="#product_nav05" data-toggle="tab">微平台</a></li>
-                  <li><a href="#product_nav06" data-toggle="tab">微平台</a></li>
-                  <li><a href="#product_nav07" data-toggle="tab">微平台</a></li>
-                </ul>
+                <div class="nav-tabs-parent">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#product_nav01" data-toggle="tab">特别推荐</a></li>
+                        <li><a href="#product_nav02" data-toggle="tab">微平台</a></li>
+                        <li><a href="#product_nav03" data-toggle="tab">微平台</a></li>
+                        <li><a href="#product_nav04" data-toggle="tab">微平台</a></li>
+                        <li><a href="#product_nav05" data-toggle="tab">微平台</a></li>
+                        <li><a href="#product_nav06" data-toggle="tab">微平台</a></li>
+                        <li><a href="#product_nav07" data-toggle="tab">微平台</a></li>
+                      </ul>
+      
+                </div>
               
                 <!-- Tab panes -->
                 <div class="tab-content">
@@ -241,4 +244,5 @@
     </script>
 
 </body>
+<script src="./js/index.js"></script>
 </html>

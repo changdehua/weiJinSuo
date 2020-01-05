@@ -1,5 +1,11 @@
 $(function(){
+    //1.轮播图
     banner();
+
+    //2.滚动navBar
+    navBar();
+
+
 });
 
 // var banner=function(){
@@ -110,4 +116,29 @@ var banner=function(){
         isMove=false;
     });
 
+}
+
+
+
+//滚动navBar
+var navBar=function(){
+    // 1.移动端使tabs在一行显示
+    var navTabs=$('.wjs_product .nav-tabs');
+    var width=0;
+    navTabs.find('li').each(function(index,item){
+        var tabWidth=$(item).outerWidth(true);
+        width+=tabWidth;
+
+    });
+    console.log(width);
+    navTabs.width(width);
+
+    //2.给navTabs添加夫标签
+
+    //3.navTabs 添加滚动
+    new IScroll($('.nav-tabs-parent')[0],{
+        scrollX:true,
+        scrollY:false,
+        click:true
+    })
 }
