@@ -307,7 +307,6 @@ a {
 .wjs_product {
   padding: 20px 0;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 20px;
   background-color: #f5f5f5;
 }
 .wjs_product .nav-tabs-parent {
@@ -499,4 +498,34 @@ a {
 .wjs_product .product_box .product_right .tip .green {
   color: green;
   border-color: green;
+}
+
+/* 新闻模块 */
+.wjs_news {
+  height: 200px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 200px;
+}
+.wjs_news .container>div {
+  height: 100px;
+  border: 1px solid #e92322;
+  text-align: center;
+}
+.wjs_news .container>div>.wjs_news_title {
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+.wjs_news .container>div>.wjs_news_title::after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  right: -6px;
+  bottom: -3px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+
 }
