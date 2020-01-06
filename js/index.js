@@ -5,6 +5,9 @@ $(function(){
     //2.滚动navBar
     navBar();
 
+    // 3.产品区块提示初始化
+    $('[data-toggle="tooltip"]').tooltip();
+
 
 });
 
