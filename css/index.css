@@ -394,6 +394,7 @@ a {
   background-color: #fff;
   box-shadow: 2px 2px 5px #d8d8d8;
   margin-top: 20px;
+  position: relative;
 }
 .wjs_product .product_box:hover {
   text-decoration: none;
@@ -413,6 +414,8 @@ a {
   width: 80px;
   text-align: center;
   color: #e92322;
+  border-left: 1px dashed #ccc;
+  position: relative;
 }
 .wjs_product .product_box.active .product_right {
   color: #fff;
@@ -441,4 +444,34 @@ a {
 }
 .product_left div {
   font-size: 12px;
+}
+
+/* 产品虚线和凹槽样式 */
+/* 伪类元素实现 */
+.wjs_product .product_box.active::after {
+  content: "\e915";
+  position: absolute;
+  font-family: "wjs";
+  top: -7px;
+  left: 0;
+  font-size: 36px;
+}
+.wjs_product .product_box .product_right::before,
+.wjs_product .product_box .product_right::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #f5f5f5;
+}
+.wjs_product .product_box .product_right::before {
+  left: -6px;
+  top: -6px;
+  box-shadow: 0 -2px 2px #d8d8d8 inset;
+}
+.wjs_product .product_box .product_right::after {
+  left: -6px;
+  bottom: -6px;
+  box-shadow: 0 2px 2px #d8d8d8 inset;
 }
