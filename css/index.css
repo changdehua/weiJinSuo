@@ -54,6 +54,40 @@ a {
 .wjs_icon_news04::after{
   content: "\e911";
 }
+.wjs_icon_patrner01::after{
+  content: "\e946";
+}
+.wjs_icon_patrner02::after{
+  content: "\e92f";
+}
+.wjs_icon_patrner03::after{
+  content: "\e92e";
+}
+.wjs_icon_patrner04::after{
+  content: "\e92a";
+}
+.wjs_icon_patrner01::after{
+  content: "\e929";
+}
+.wjs_icon_patrner05::after{
+  content: "\e931";
+}
+.wjs_icon_patrner01::after{
+  content: "\e92c";
+}
+.wjs_icon_patrner06::after{
+  content: "\e92b";
+}
+.wjs_icon_patrner07::after{
+  content: "\e92d";
+}
+.wjs_icon_patrner08::after{
+  content: "\e911";
+}
+.wjs_icon_patrner09::after{
+  content: "\e911";
+}
+
 
 
 /* index */
@@ -116,6 +150,11 @@ a {
     border: none;
     margin-bottom: 0;
     border-bottom: 1px solid #ccc;
+    width: 100%;
+    z-index: 1000000;
+    border-radius: 0;
+    top: 0;
+    left: 0;
   }
   .wjs_nav .wjs_icon_logo {
     color: #e92322;
@@ -515,6 +554,8 @@ a {
 /* 新闻模块 */
 .wjs_news {
   padding-top: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
 }
 .wjs_news .container>div {
   text-align: center;
@@ -567,6 +608,23 @@ a {
   font-size: 36px;
   color: #fff;
   margin-bottom: 60px;
+}
+/* 新闻导航响应式 */
+@media screen and (min-width:768px) and (max-width:992px) {
+  .wjs_news .nav-tabs > li > a {
+    margin: 10px 50px;
+  }
+}
+@media screen and (max-width:768px) {
+  .wjs_news .nav-tabs > li {
+    width: 25%;
+    text-align: center;
+
+  }
+  .wjs_news .nav-tabs > li > a {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
 }
 .wjs_news .nav-tabs > li:last-of-type > a {
   margin-bottom: 0;
@@ -627,4 +685,31 @@ a {
   .wjs_news .nav-tabs.nav-justified > .active > a:focus {
     border-bottom-color: #fff;
   }
+}
+/* 新闻内容 */
+.wjs_news .wjs_news_content {
+  list-style: none;
+}
+.wjs_news .wjs_news_content li a {
+  display: block;
+  color: #333;
+  margin: 30px 0;
+
+}
+.wjs_news .wjs_news_content li a:hover {
+  text-decoration: none;
+  color: #333;
+}
+/* 合作伙伴 */
+.wjs_partner ul{
+list-style: none;
+text-align: center;
+}
+.wjs_partner ul li {
+  display: inline-block;
+  font-size: 60px;
+}
+.wjs_partner ul li a {
+  display: inline-block;
+  margin: 10px 20px;
 }
